@@ -116,7 +116,7 @@ def tobs():
 
     return jsonify(tobs_list)
 
-# 5. Temperature observations route by start date
+# 5. Statistics of temperature observations route by start date
 @app.route("/api/v1.0/<start>")
 def by_start_date(start):
     
@@ -150,7 +150,7 @@ def by_start_date(start):
 
     return jsonify(all_prcp)
 
-# 5. Temperature observations route by start date
+# 6. Statistics of temperature observations route by start and end date
 @app.route("/api/v1.0/<start>/<end>")
 def by_start_end_date(start, end):
     
